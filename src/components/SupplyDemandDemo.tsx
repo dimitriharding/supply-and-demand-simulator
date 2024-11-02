@@ -8,7 +8,8 @@ const SupplyDemandDemo = () => {
   const { curveData, equilibrium, demandIntercept, supplyIntercept, setDemandIntercept, setSupplyIntercept } = useMarketState();
 
   return (
-    <Card className="w-full max-w-4xl bg-white/50 backdrop-blur-sm shadow-xl border-neutral-200/50">
+    <div className="flex items-center justify-center w-full">
+    <Card className="w-auto max-w-4xl bg-white/50 backdrop-blur-sm shadow-xl border-neutral-200/50">
       <CardHeader className="text-center space-y-2">
         <CardTitle className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
           Interactive Supply and Demand Simulator
@@ -28,6 +29,7 @@ const SupplyDemandDemo = () => {
         <EquilibriumDisplay equilibrium={equilibrium} />
       </CardContent>
     </Card>
+    </div>
   );
 };
 
