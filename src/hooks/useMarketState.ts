@@ -3,8 +3,8 @@ import { useState, useEffect } from 'react';
 export const useMarketState = () => {
   const [demandIntercept, setDemandIntercept] = useState(100);
   const [supplyIntercept, setSupplyIntercept] = useState(0);
-  const [demandSlope, setDemandSlope] = useState(1);
-  const [supplySlope, setSupplySlope] = useState(1);
+  const [demandSlope] = useState(1);
+  const [supplySlope] = useState(1);
   const [curveData, setCurveData] = useState<Array<any>>([]);
   const [equilibrium, setEquilibrium] = useState({ price: 0, quantity: 0 });
 
